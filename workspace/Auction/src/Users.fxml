@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SampleController">
+   <children>
+      <VBox prefHeight="502.0" prefWidth="518.0">
+         <children>
+            <AnchorPane prefHeight="66.0" prefWidth="518.0" style="-fx-background-color: #333; -fx-border-color: #fff; -fx-border-width: 5px; -fx-border-radius: 3px;">
+               <children>
+                  <Label layoutX="79.0" layoutY="16.0" style="-fx-border-color: #333;" text="Search By ID:" textFill="#f2f2f2">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idSearch" layoutX="217.0" layoutY="18.0" promptText="..." />
+                  <Button fx:id="nameSearchButton" layoutX="366.0" layoutY="18.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: #fff;" text="Search" />
+                  <ImageView fitHeight="52.0" fitWidth="66.0" layoutX="4.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@9c049024ec0281f0e5c790de37c7c31b.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <SplitPane dividerPositions="0.29797979797979796" prefHeight="451.0" prefWidth="518.0" style="-fx-background-color: #333; -fx-border-color: #fff; -fx-border-width: 5px; -fx-border-radius: 3px;">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="106.0" layoutY="14.0" text="Title:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="60.0" layoutY="54.0" text="First Name:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="76.0" layoutY="98.0" text="Surname:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="142.0" text="Contact Address:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="4.0" layoutY="182.0" text="Telephone Number:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="102.0" layoutY="307.0" text="Email:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="86.0" layoutY="225.0" text="Status:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="267.0" text="Buyer Approved:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="52.0" layoutY="346.0" text="Account No:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="65.0" layoutY="386.0" text="Sort Code:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="adduser" layoutX="208.0" layoutY="377.0" mnemonicParsing="false" onAction="#createUsers" prefHeight="37.0" prefWidth="141.0" style="-fx-background-color: #fff;" text="Add New Users">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="titleSearch" layoutX="14.0" layoutY="14.0" promptText="..." />
+                        <TextField fx:id="firstnameSearch" layoutX="14.0" layoutY="55.0" promptText="..." />
+                        <TextField fx:id="surnameSearch" layoutX="14.0" layoutY="100.0" promptText="..." />
+                        <TextField fx:id="addressSearch" layoutX="14.0" layoutY="143.0" promptText="..." />
+                        <TextField fx:id="telephoneSearch" layoutX="14.0" layoutY="184.0" promptText="..." />
+                        <TextField fx:id="statusSearch" layoutX="14.0" layoutY="225.0" promptText="..." />
+                        <TextField fx:id="approvedSearch" layoutX="14.0" layoutY="266.0" promptText="..." />
+                        <TextField fx:id="emailSearch" layoutX="14.0" layoutY="304.0" promptText="..." />
+                        <TextField fx:id="accountSearch" layoutX="14.0" layoutY="346.0" promptText="..." />
+                        <TextField fx:id="sortcodeSearch" layoutX="14.0" layoutY="383.0" promptText="..." />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

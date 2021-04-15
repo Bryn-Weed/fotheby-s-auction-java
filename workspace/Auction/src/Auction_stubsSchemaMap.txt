@@ -1,0 +1,21 @@
+#
+# Generated with Matisse Schema Definition Language 9.1.9
+# Generation date: Sat Apr 21 17:28:04 2018
+#
+# Mapping of Java classes and indexes to the corresponding database schema objects
+#
+item = item
+searchProductionDate = searchProductionDate
+searchClassification = searchClassification
+searchArtist = searchArtist
+FindItem = FindItem
+person = person
+searchName = searchName
+searchStatus = searchStatus
+searchApproved = searchApproved
+FindPerson = FindPerson
+photographs = photographs
+paintings = paintings
+drawings = drawings
+sculptures = sculptures
+carvings = carvings

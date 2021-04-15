@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane prefHeight="373.0" prefWidth="698.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SampleController">
+   <children>
+      <VBox layoutX="-260.0" layoutY="-296.0" prefHeight="200.0" prefWidth="100.0" />
+      <AnchorPane layoutX="7.0" layoutY="7.0" prefHeight="57.0" prefWidth="509.0">
+         <children>
+            <Label layoutX="90.0" layoutY="11.0" text="Fotheby's Auctioneer Table" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@9c049024ec0281f0e5c790de37c7c31b.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="13.0" layoutY="54.0" prefHeight="305.0" prefWidth="484.0">
+         <children>
+            <Label layoutX="13.0" layoutY="22.0" text="List By:" textFill="#e1dddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="soldItem" layoutX="609.0" layoutY="279.0" mnemonicParsing="false" onAction="#soldItem" style="-fx-background-color: #fff;" text="Sold" />
+            <ChoiceBox fx:id="selectSearch" layoutX="65.0" layoutY="20.0" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #fff;" value="Artist Name">
+            <items>
+            	<FXCollections fx:factory="observableArrayList">
+            		<String fx:value="Artist Name" />
+            		<String fx:value="Auction Date" />
+            		<String fx:value="Classification" />
+            		<String fx:value="Lot No." />
+            	</FXCollections>
+            </items>
+            </ChoiceBox>
+            <Button fx:id="auctionSearch" layoutX="176.0" layoutY="20.0" mnemonicParsing="false" onAction="#populateAuctionList" prefHeight="21.0" prefWidth="52.0" style="-fx-background-color: #fff;" text="List" />
+            <ListView fx:id="auctionList" layoutX="20.0" layoutY="66.0" prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="auctioneerViewItem" layoutX="138.0" layoutY="279.0" mnemonicParsing="false" onAction="#getAuctionData" style="-fx-background-color: #fff;" text="View Item" />
+            <Label layoutX="253.0" layoutY="72.0" text="Title:" textFill="#e1dddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="auctionTitle" layoutX="236.0" layoutY="99.0" promptText="..." />
+            <Label layoutX="251.0" layoutY="142.0" text="Commission Bids:" textFill="#e1dddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="auctionCommissionBids" layoutX="235.0" layoutY="173.0" promptText="..." />
+            <Label layoutX="251.0" layoutY="220.0" text="Reserve Price:" textFill="#e1dddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="auctionReservePrice" layoutX="235.0" layoutY="247.0" promptText="..." />
+            <Label layoutX="469.0" layoutY="72.0" text="Sold:" textFill="#e1dddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="auctionSold" layoutX="507.0" layoutY="70.0" prefHeight="25.0" prefWidth="33.0" promptText="..." />
+            <Label layoutX="557.0" layoutY="72.0" text="Price:" textFill="#e1dddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="auctionPrice" layoutX="603.0" layoutY="70.0" prefHeight="25.0" prefWidth="52.0" promptText="..." />
+            <Label layoutX="453.0" layoutY="114.0" text="Client No:" textFill="#e1dddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="auctionClientNo" layoutX="531.0" layoutY="112.0" prefHeight="25.0" prefWidth="125.0" promptText="..." />
+            <Label layoutX="449.0" layoutY="156.0" text="Comments:" textFill="#e1dddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="auctionComments" layoutX="449.0" layoutY="186.0" prefHeight="47.0" prefWidth="206.0" promptText="..." />
+            <TextField fx:id="confirmSale" layoutX="445.0" layoutY="247.0" prefHeight="25.0" prefWidth="213.0" promptText="..." />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

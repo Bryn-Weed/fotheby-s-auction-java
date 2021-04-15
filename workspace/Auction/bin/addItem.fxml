@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="719.0" prefWidth="518.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SampleController">
+   <children>
+      <VBox prefHeight="719.0" prefWidth="518.0">
+         <children>
+            <AnchorPane prefHeight="66.0" prefWidth="518.0" style="-fx-background-color: #333; -fx-border-color: #fff; -fx-border-width: 5px; -fx-border-radius: 3px;">
+               <children>
+                  <Label layoutX="89.0" layoutY="14.0" style="-fx-border-color: #333;" text="Add New Item" textFill="#f2f2f2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="63.0" fitWidth="73.0" layoutX="3.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@9c049024ec0281f0e5c790de37c7c31b.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <SplitPane dividerPositions="0.29797979797979796" prefHeight="655.0" prefWidth="518.0" style="-fx-background-color: #333; -fx-border-color: #fff; -fx-border-width: 5px; -fx-border-radius: 3px;">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="54.0" layoutY="14.0" text="Item Lot No.:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="54.0" text="Artist Name:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="100.0" text="Year of Production:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="143.0" text="Classification:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="182.0" text="Auction Date:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="222.0" text="Est. Price:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="491.0" text="Description:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="269.0" text="Reserve Price:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="38.0" layoutY="306.0" prefHeight="25.0" prefWidth="125.0" text="Prior Bidding:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="38.0" layoutY="350.0" prefHeight="25.0" prefWidth="125.0" text="Bid Amount:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="32.0" layoutY="400.0" prefHeight="25.0" prefWidth="125.0" text="Client Number:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="443.0" prefHeight="25.0" prefWidth="66.0" text="Image:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="352.0">
+                     <children>
+                        <Button fx:id="createItem" layoutX="150.0" layoutY="591.0" mnemonicParsing="false" onAction="#createItem" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #fff;" text="Add">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="lotNo" layoutX="14.0" layoutY="14.0" promptText="..." />
+                        <TextField fx:id="artistName" layoutX="14.0" layoutY="55.0" promptText="..." />
+                        <TextField fx:id="yearOfProduction" layoutX="14.0" layoutY="100.0" promptText="..." />
+                        <TextField fx:id="classification" layoutX="14.0" layoutY="143.0" promptText="..." />
+                        <TextField fx:id="auctionDate" layoutX="14.0" layoutY="184.0" promptText="..." />
+                        <TextField fx:id="estPrice" layoutX="14.0" layoutY="225.0" promptText="..." />
+                        <TextArea fx:id="description" layoutX="16.0" layoutY="493.0" prefHeight="83.0" prefWidth="295.0" promptText="..." />
+                        <TextField fx:id="confirmedcreate" editable="false" layoutX="213.0" layoutY="598.0" style="-fx-background-color: #fff;">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="resPrice" layoutX="14.0" layoutY="269.0" promptText="..." />
+                        <TextField fx:id="commissionBidding" layoutX="14.0" layoutY="308.0" promptText="..." />
+                        <TextField fx:id="bidAmount" layoutX="14.0" layoutY="351.0" promptText="..." />
+                        <TextField fx:id="clientNo" layoutX="14.0" layoutY="398.0" promptText="..." />
+                        <Button fx:id="imageChooser" layoutX="15.0" layoutY="449.0" mnemonicParsing="false" onAction="#chooseImage" style="-fx-background-color: #fff;" text="Select a File" />
+                        <Label layoutX="163.0" layoutY="14.0" text="Item No:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="itemNo" layoutX="235.0" layoutY="14.0" prefHeight="25.0" prefWidth="116.0" promptText="..." />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="665.0" prefWidth="756.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SampleController">
+   <children>
+      <VBox prefHeight="665.0" prefWidth="756.0">
+         <children>
+            <AnchorPane prefHeight="66.0" prefWidth="518.0" style="-fx-background-color: #333; -fx-border-color: #fff; -fx-border-width: 5px; -fx-border-radius: 3px;">
+               <children>
+                  <Label layoutX="90.0" layoutY="14.0" style="-fx-border-color: #333;" text="Item Catalogue:" textFill="#f2f2f2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="57.0" fitWidth="73.0" layoutX="8.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@9c049024ec0281f0e5c790de37c7c31b.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <SplitPane dividerPositions="0.29797979797979796" prefHeight="601.0" prefWidth="699.0" style="-fx-background-color: #333; -fx-border-color: #fff; -fx-border-width: 5px; -fx-border-radius: 3px;">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="589.0" prefWidth="31.0">
+                     <children>
+                        <Label layoutX="107.0" layoutY="311.0" text="Item Lot No.:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="114.0" layoutY="56.0" text="Artist Name:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="65.0" layoutY="101.0" text="Year of Production:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="105.0" layoutY="145.0" text="Classification:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="105.0" layoutY="184.0" text="Auction Date:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="133.0" layoutY="224.0" text="Est. Price:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="111.0" layoutY="444.0" text="Description:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="121.0" layoutY="272.0" text="Piece Title:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="112.0" layoutY="22.0" text="Auction Title:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="116.0" layoutY="351.0" text="Dimensions:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="139.0" layoutY="395.0" text="Framed:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="589.0" prefWidth="553.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Button fx:id="back" layoutX="423.0" layoutY="537.0" mnemonicParsing="false" onAction="#back" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #333;" text="Back" textFill="#ebebeb">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="lotNo" layoutX="14.0" layoutY="310.0" promptText="92" text="92" />
+                        <TextField fx:id="artistName" layoutX="14.0" layoutY="55.0" promptText="..." text="Charles Bellender" />
+                        <TextField fx:id="yearOfProduction" layoutX="14.0" layoutY="100.0" promptText="..." text="Portrait" />
+                        <TextField fx:id="classification" layoutX="14.0" layoutY="143.0" promptText="..." text="Landscape" />
+                        <TextField fx:id="auctionDate" layoutX="14.0" layoutY="184.0" promptText="..." text="Sat 29/10/2017" />
+                        <TextField fx:id="estPrice" layoutX="14.0" layoutY="225.0" promptText="..." text="£10,000 - £12,000" />
+                        <TextArea fx:id="description" layoutX="16.0" layoutY="445.0" prefHeight="125.0" prefWidth="366.0" promptText="..." text="An exceptionally fine contemporary painting..." />
+                        <TextField fx:id="artistName1" layoutX="14.0" layoutY="21.0" prefHeight="25.0" prefWidth="180.0" promptText="..." text="21st Century English Paintings" />
+                        <TextField fx:id="lotNo1" layoutX="14.0" layoutY="270.0" promptText="92" text="Emergent Wealth" />
+                        <TextField fx:id="lotNo2" layoutX="14.0" layoutY="350.0" promptText="92" text="1.5m-1.5m" />
+                        <TextField fx:id="lotNo21" layoutX="14.0" layoutY="392.0" prefHeight="25.0" prefWidth="180.0" promptText="92" text="Minimalist Black Metallic Frame" />
+                        <ImageView fitHeight="231.0" fitWidth="282.0" layoutX="215.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@emergentwealth.png" />
+                           </image></ImageView>
+                        <Label layoutX="291.0" layoutY="97.0" text="Image:" textFill="#171717">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

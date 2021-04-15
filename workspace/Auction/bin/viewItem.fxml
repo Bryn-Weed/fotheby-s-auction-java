@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="502.0" prefWidth="599.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SampleController">
+   <children>
+      <VBox prefHeight="502.0" prefWidth="599.0">
+         <children>
+            <AnchorPane prefHeight="66.0" prefWidth="518.0" style="-fx-background-color: #333; -fx-border-color: #fff; -fx-border-width: 5px; -fx-border-radius: 3px;">
+               <children>
+                  <TextField fx:id="lotNoSearch" layoutX="280.0" layoutY="17.0" promptText="..." />
+                  <Button fx:id="lotNoSearchButton" layoutX="429.0" layoutY="11.0" mnemonicParsing="false" onAction="#itemSearch" prefHeight="8.0" prefWidth="73.0" style="-fx-background-color: #fff;" text="Search">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="218.0" layoutY="17.0" text="Item No:" textFill="#e4e4e4">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="19.0" text="Fotheby's" textFill="#e4e4e4">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <SplitPane dividerPositions="0.29797979797979796" prefHeight="440.0" prefWidth="579.0" style="-fx-background-color: #333; -fx-border-color: #fff; -fx-border-width: 5px; -fx-border-radius: 3px;">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="54.0" layoutY="14.0" text="Item Lot No.:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="54.0" text="Artist Name:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="100.0" text="Year of Production:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="143.0" text="Classification:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="182.0" text="Auction Date:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="222.0" text="Est. Price:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="267.0" text="Description:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="itemUpdated" layoutX="7.0" layoutY="402.0" prefHeight="25.0" prefWidth="136.0" promptText="..." />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="back" layoutX="255.0" layoutY="395.0" mnemonicParsing="false" onAction="#back" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #fff;" text="Back">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="lotNoView" layoutX="14.0" layoutY="14.0" promptText="..." />
+                        <TextField fx:id="artistNameView" layoutX="14.0" layoutY="55.0" promptText="..." />
+                        <TextField fx:id="yearOfProductionView" layoutX="14.0" layoutY="100.0" promptText="..." />
+                        <TextField fx:id="classificationView" layoutX="14.0" layoutY="143.0" promptText="..." />
+                        <TextField fx:id="auctiondateView" layoutX="14.0" layoutY="184.0" promptText="..." />
+                        <TextField fx:id="estPriceView" layoutX="14.0" layoutY="225.0" promptText="..." />
+                        <TextArea fx:id="descriptionView" layoutX="7.0" layoutY="266.0" prefHeight="83.0" prefWidth="295.0" promptText="..." />
+                        <Button fx:id="updateItem" layoutX="21.0" layoutY="396.0" mnemonicParsing="false" onAction="#itemUpdate" prefHeight="37.0" prefWidth="84.0" style="-fx-background-color: #fff;" text="Update">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="removeItem" layoutX="134.0" layoutY="396.0" mnemonicParsing="false" onAction="#remove" prefHeight="37.0" prefWidth="84.0" style="-fx-background-color: #fff;" text="Remove">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <ImageView fx:id="itemImage" fitHeight="150.0" fitWidth="200.0" layoutX="215.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+      <ImageView fitHeight="62.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@9c049024ec0281f0e5c790de37c7c31b.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

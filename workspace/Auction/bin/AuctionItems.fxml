@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane prefHeight="258.0" prefWidth="516.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SampleController">
+   <children>
+      <ImageView fitHeight="58.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@9c049024ec0281f0e5c790de37c7c31b.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="-260.0" layoutY="-296.0" prefHeight="200.0" prefWidth="100.0" />
+      <AnchorPane layoutX="7.0" layoutY="7.0" prefHeight="57.0" prefWidth="509.0">
+         <children>
+            <Label layoutX="96.0" layoutY="11.0" text="Fotheby's Auction Items" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="16.0" layoutY="54.0" prefHeight="184.0" prefWidth="484.0">
+         <children>
+            <Label layoutX="13.0" layoutY="22.0" text="Search by:" textFill="#e1dddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="artistnamesearch" layoutX="210.0" layoutY="20.0" promptText="..." />
+            <Button fx:id="additem" layoutX="236.0" layoutY="62.0" mnemonicParsing="false" onAction="#addItem" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #fff;" text="Add Items" />
+            <Button fx:id="deleteitem" layoutX="236.0" layoutY="96.0" mnemonicParsing="false" onAction="#removeFromList" style="-fx-background-color: #fff;" text="Delete Item" />
+            <Button fx:id="viewitem" layoutX="236.0" layoutY="128.0" mnemonicParsing="false" onAction="#viewItem" style="-fx-background-color: #fff;" text="View &amp; Edit Items" />
+            <ChoiceBox fx:id="selectSearch" layoutX="92.0" layoutY="20.0" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #fff;" value="Artist Name">
+            <items>
+            	<FXCollections fx:factory="observableArrayList">
+            		<String fx:value="Artist Name" />
+            		<String fx:value="Auction Date" />
+            		<String fx:value="Classification" />
+            		<String fx:value="Lot No." />
+            	</FXCollections>
+            </items>
+            </ChoiceBox>
+            <Button fx:id="listPopulate" layoutX="359.0" layoutY="20.0" mnemonicParsing="false" onAction="#populateList" prefHeight="21.0" prefWidth="52.0" style="-fx-background-color: #fff;" text="Search" />
+            <ListView fx:id="itemList" layoutX="31.0" layoutY="62.0" prefHeight="92.0" prefWidth="200.0" />
+            <Button fx:id="addToAuction" layoutX="31.0" layoutY="158.0" mnemonicParsing="false" onAction="#addToAuction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #fff;" text="Add to Auction:" />
+            <TextField fx:id="auctionName" layoutX="136.0" layoutY="158.0" promptText="..." />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

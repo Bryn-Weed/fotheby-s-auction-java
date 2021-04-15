@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="399.0" prefWidth="509.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="SampleController">
+   <children>
+      <VBox layoutX="-2.0" prefHeight="399.0" prefWidth="509.0">
+         <children>
+            <AnchorPane prefHeight="76.0" prefWidth="509.0" style="-fx-border-color: #333;">
+               <children>
+                  <Label layoutX="85.0" layoutY="19.0" text="Upcoming Auctions">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="71.0" fitWidth="77.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@9c049024ec0281f0e5c790de37c7c31b.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="98.0" prefWidth="494.0">
+               <children>
+                  <VBox layoutX="52.0" layoutY="24.0" prefHeight="59.0" prefWidth="406.0" style="-fx-background-color: #333;">
+                     <children>
+                        <Label text="Auction Theme: Charles Bellender's Works" textFill="#dddada">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="viewCatalogue" mnemonicParsing="false" onAction="#viewCatalogue" style="-fx-background-color: #fff;" text="View Catalogue" />
+                        <Label layoutX="10.0" layoutY="10.0" text="Date: 08/09/2018" textFill="#dddada">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="86.0" prefHeight="98.0" prefWidth="494.0">
+               <children>
+                  <VBox layoutX="52.0" layoutY="24.0" prefHeight="59.0" prefWidth="406.0" style="-fx-background-color: #333;">
+                     <children>
+                        <Label text="Auction Theme: Inappropriate Sculptures" textFill="#dddada">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="viewCatalogue2" mnemonicParsing="false" onAction="#viewCatalogue" style="-fx-background-color: #fff;" text="View Catalogue" />
+                        <Label layoutX="10.0" layoutY="10.0" text="21/04/2018" textFill="#dddada">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="129.0" prefWidth="509.0">
+               <children>
+                  <Button fx:id="backButton" layoutX="443.0" layoutY="90.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #333;" text="Back" textFill="#ebebeb">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

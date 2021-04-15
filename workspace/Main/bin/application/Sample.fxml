@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="530.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="vbox" layoutX="-7.0" prefHeight="530.0" prefWidth="634.0" style="-fx-padding: 10; -fx-background-color: white; -fx-border-color: #432929; -fx-border-style: solid inside; -fx-border-width: 3; -fx-border-insets: 5; -fx-border-radius: 5;">
+         <children>
+            <VBox>
+               <children>
+                  <AnchorPane prefHeight="21.0" prefWidth="599.0">
+                     <children>
+                        <Label layoutX="50.0" layoutY="4.0" lineSpacing="3.0" text="Fotheby's Auction Houses" textAlignment="JUSTIFY" textFill="#432929" wrapText="true">
+                           <font>
+                              <Font name="Baskerville Old Face" size="30.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="48.0" fitWidth="89.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/9c049024ec0281f0e5c790de37c7c31b.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="362.0" layoutY="6.0" text="Est 1961" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <TabPane prefHeight="447.0" prefWidth="598.0" side="RIGHT" style="-fx-background-color: #ffffff; -tab-max-width: 90px;" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab style="-fx-background-color: #FFFFFF; -fx-text-fill: #BF0000;" text="Auctions">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: grey; fx-border-radius: 5;" visible="false" />
+                  </content>
+                </Tab>
+                <Tab style="-fx-background-color: #bf0000; -fx-color: #ffffff;" text="Account">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: #432929; -fx-border-style: solid; -fx-border-width: 3; -fx-border-radius: 5;" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

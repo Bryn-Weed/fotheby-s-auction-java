@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="358.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SampleController">
+   <children>
+      <VBox fx:id="vbox" layoutX="-7.0" prefHeight="535.0" prefWidth="477.0" style="-fx-padding: 10; -fx-background-color: white; -fx-border-color: #333; -fx-border-style: solid inside; -fx-border-width: 3; -fx-border-insets: 5; -fx-border-radius: 5;">
+         <children>
+            <VBox>
+               <children>
+                  <AnchorPane prefHeight="21.0" prefWidth="599.0">
+                     <children>
+                        <Label layoutX="50.0" layoutY="4.0" lineSpacing="3.0" text="Fotheby's Auction Houses" textAlignment="JUSTIFY" textFill="#333333" wrapText="true">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="48.0" fitWidth="89.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@9c049024ec0281f0e5c790de37c7c31b.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="362.0" layoutY="6.0" text="Est 1961" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="481.0" prefWidth="441.0">
+               <children>
+                  <VBox alignment="BASELINE_CENTER" prefHeight="13.0" prefWidth="437.0" />
+                  <AnchorPane prefHeight="482.0" prefWidth="441.0" style="-fx-background-color: #fff; -fx-border-color: #333; -fx-border-radius: 3px; -fx-border-width: 2px;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="34.0" prefHeight="17.0" prefWidth="89.0" text="Dear: ">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="304.0" layoutY="19.0" text="Date:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="clientName" layoutX="52.0" layoutY="30.0" prefHeight="29.0" prefWidth="97.0" promptText="..." style="-fx-background-color: #fff; -fx-border-color: #fff; -fx-border-radius: 3px; -fx-border-width: 2px;" text="Peter Monroe" />
+                        <TextArea layoutX="21.0" layoutY="60.0" prefHeight="373.0" prefWidth="390.0" text="We are pleased to inform you that your piece has been scheduled &#10;for sale at our auction house in London on :&#10;&#10;&#10;May I take this opportunity to remind you that should you wish to&#10;withdraw your item from the sale, you must notify this department&#10;by:&#10;&#10;&#10;Any requests to withdraw the piece from sale after the stated &#10;deadline will result in a fee equivalent to 10% of the estimated &#10;price of your piece, this being:&#10;&#10;&#10;May I also take this opportunity again to thank you for using &#10;Fotheby's auction house, as we seek to achieve the best possible &#10;selling price for your item.&#10;&#10;Sincerely,&#10;&#10;Mr M Fotheby.&#10;" />
+                        <Button fx:id="reportGenerate" layoutX="164.0" layoutY="7.0" mnemonicParsing="false" onAction="#generateReport" style="-fx-background-color: #333;" text="Generate Report" textFill="#eeeded" />
+                        <TextField fx:id="dateFieldTop" layoutX="339.0" layoutY="15.0" prefHeight="29.0" prefWidth="97.0" promptText="..." style="-fx-background-color: #fff; -fx-border-color: #fff; -fx-border-radius: 3px; -fx-border-width: 2px;" />
+                        <TextField fx:id="dateFieldReport" layoutX="168.0" layoutY="98.0" prefHeight="29.0" prefWidth="97.0" promptText="..." style="-fx-background-color: #fff; -fx-border-color: #fff; -fx-border-radius: 3px; -fx-border-width: 2px;" />
+                        <TextField fx:id="date2weeks" layoutX="172.0" layoutY="175.0" prefHeight="29.0" prefWidth="97.0" promptText="..." style="-fx-background-color: #fff; -fx-border-color: #fff; -fx-border-radius: 3px; -fx-border-width: 2px;" />
+                        <TextField fx:id="feeValue" layoutX="172.0" layoutY="272.0" prefHeight="29.0" prefWidth="97.0" promptText="..." style="-fx-background-color: #fff; -fx-border-color: #fff; -fx-border-radius: 3px; -fx-border-width: 2px;" />
+
+
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

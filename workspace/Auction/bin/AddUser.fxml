@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="551.0" prefWidth="518.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SampleController">
+   <children>
+      <VBox prefHeight="551.0" prefWidth="518.0">
+         <children>
+            <AnchorPane prefHeight="66.0" prefWidth="518.0" style="-fx-background-color: #333; -fx-border-color: #fff; -fx-border-width: 5px; -fx-border-radius: 3px;">
+               <children>
+                  <Label layoutX="75.0" layoutY="14.0" style="-fx-border-color: #333;" text="Add New User" textFill="#f2f2f2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="54.0" fitWidth="61.0" layoutX="7.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@9c049024ec0281f0e5c790de37c7c31b.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <SplitPane dividerPositions="0.29797979797979796" prefHeight="485.0" prefWidth="518.0" style="-fx-background-color: #333; -fx-border-color: #fff; -fx-border-width: 5px; -fx-border-radius: 3px;">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="106.0" layoutY="14.0" text="Title:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="60.0" layoutY="54.0" text="First Name:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="76.0" layoutY="98.0" text="Surname:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="142.0" text="Contact Address:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="4.0" layoutY="182.0" text="Telephone Number:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="102.0" layoutY="307.0" text="Email:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="86.0" layoutY="225.0" text="Status:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="267.0" text="Buyer Approved:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="52.0" layoutY="346.0" text="Account No:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="65.0" layoutY="386.0" text="Sort Code:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="69.0" layoutY="423.0" text="User No:" textFill="#e4e4e4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="createUser" layoutX="277.0" layoutY="396.0" mnemonicParsing="false" onAction="#create" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #fff;" text="Add">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="title" layoutX="14.0" layoutY="14.0" promptText="..." />
+                        <TextField fx:id="firstname" layoutX="14.0" layoutY="55.0" promptText="..." />
+                        <TextField fx:id="surname" layoutX="14.0" layoutY="100.0" promptText="..." />
+                        <TextField fx:id="address" layoutX="14.0" layoutY="143.0" promptText="..." />
+                        <TextField fx:id="telephone" layoutX="14.0" layoutY="184.0" promptText="..." />
+                        <TextField fx:id="status" layoutX="14.0" layoutY="225.0" promptText="..." />
+                        <TextField fx:id="approved" layoutX="14.0" layoutY="266.0" promptText="..." />
+                        <TextField fx:id="email" layoutX="14.0" layoutY="304.0" promptText="..." />
+                        <TextField fx:id="account" layoutX="14.0" layoutY="346.0" promptText="..." />
+                        <TextField fx:id="sortcode" layoutX="14.0" layoutY="383.0" promptText="..." />
+                        <TextField fx:id="confirmedadd" editable="false" layoutX="214.0" layoutY="436.0" style="-fx-background-color: #fff;">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="personNo" layoutX="14.0" layoutY="424.0" promptText="..." />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

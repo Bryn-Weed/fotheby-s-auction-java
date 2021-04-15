@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="241.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SampleController">
+   <children>
+      <VBox prefHeight="233.0" prefWidth="529.0">
+         <children>
+            <AnchorPane prefHeight="89.0" prefWidth="529.0">
+               <children>
+                  <Label layoutX="158.0" layoutY="14.0" prefHeight="36.0" prefWidth="213.0" text="Fotheby's Auctions">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="51.0" fitWidth="65.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@9c049024ec0281f0e5c790de37c7c31b.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="381.0" prefWidth="529.0">
+               <children>
+                  <Button fx:id="auctions" layoutX="226.0" layoutY="75.0" mnemonicParsing="false" onAction="#auctions" style="-fx-background-color: #333;" text="Items" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewAuction" layoutX="298.0" layoutY="75.0" mnemonicParsing="false" onAction="#viewAuctions" style="-fx-background-color: #333;" text="Auctions" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="users" layoutX="145.0" layoutY="75.0" mnemonicParsing="false" onAction="#users" style="-fx-background-color: #333;" text="Clients" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="catalogues" layoutX="208.0" layoutY="117.0" mnemonicParsing="false" onAction="#viewCatalogue" style="-fx-background-color: #333;" text="Catalogues" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
